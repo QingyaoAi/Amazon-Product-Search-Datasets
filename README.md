@@ -3,7 +3,7 @@ This is an benchmark dataset for personalized product search. Please cite the fo
     
 *	Qingyao Ai, Yongfeng Zhang, Keping Bi, Xu Chen, W. Bruce Croft. Learning a Hierarchical Embedding Model for Personalized ProductSearch. In Proceedings of SIGIR ’17
     	
-Also, because this benchmark is built with the 5-core data of Amazon review datasets provided by McAuley et al. [1,2] (http://jmcauley.ucsd.edu/data/amazon/), please cite one or both of their papers following if you use the data:
+Also, because this benchmark is built with the 5-core data of Amazon review datasets provided by McAuley et al. [3,4] (http://jmcauley.ucsd.edu/data/amazon/), please cite one or both of their papers following if you use the data:
 
 *	R. He, J. McAuley. Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. In Proceedings of WWW ’16
 *	J. McAuley, C. Targett, J. Shi, A. van den Hengel. Image-based recommendations on styles and substitutes. In Proceedings of SIGIR ’15
