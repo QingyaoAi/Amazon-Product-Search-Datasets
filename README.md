@@ -33,7 +33,7 @@ Each dataset is split into a training set and a test set according to the follow
 ### File format ###
 
 Each directory is named after the orignal file name of the 5-core data provided by McAuley et al.[4]. The detailed format for each file in each directory is as follows: 
-'''
+```
     1. query_text.txt.gz:
     	Each line represent one query string.
     2. test.qrels.gz:
@@ -45,7 +45,7 @@ Each directory is named after the orignal file name of the 5-core data provided 
     3. train_review_id.txt.gz:
     	line_<review_line_number>
     	<review_line_number>: the line number (start from 0) of the review data in the original 5-core data.
-'''
+```
 
 ### Reference: ###
     [1] Christophe Van Gysel, Maarten de Rijke, and Evangelos Kanoulas. 2016. Learning latent vector spaces for product search. In Proceedings of CIKM '16.
