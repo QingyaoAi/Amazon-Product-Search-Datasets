@@ -20,7 +20,7 @@ The search queries for each item were extracted following the paradigm used by G
 *	Category information for each item were extracted from the metadata of products, and the terms from a single hierarchy of categories were concatenated to form a topic string.
 *	Stopwords and duplicate words are removed from the topic string.
 *	The category hierarchies with only one level were ignored.
-*	Duplicate words are removed sequentially from the first level of category hierarchy to the last level (e.g. \textit{Camera, Photo $\rightarrow$ Digital Camera Lenses} would be converted to ``photo digital camera lenses").
+*	Duplicate words are removed sequentially from the first level of category hierarchy to the last level (e.g. "Camera, Photo -> Digital Camera Lenses" would be converted to "photo digital camera lenses").
 *	For personalized product search, user-query pairs are constructed by linking user-item pairs with each item's queries. In other words, if a user purchased an item, the pairing of this user with any query associated with the item are valid user-query pairs, and the items that are purchased by the user and belong to the query are considered as relevant to the user-query pair.
 
 
@@ -33,6 +33,7 @@ Each dataset is split into a training set and a test set according to the follow
 ### File format ###
 
 Each directory is named after the orignal file name of the 5-core data provided by McAuley et al.[4]. The detailed format for each file in each directory is as follows: 
+'''
     1. query_text.txt.gz:
     	Each line represent one query string.
     2. test.qrels.gz:
@@ -44,7 +45,8 @@ Each directory is named after the orignal file name of the 5-core data provided 
     3. train_review_id.txt.gz:
     	line_<review_line_number>
     	<review_line_number>: the line number (start from 0) of the review data in the original 5-core data.
-        
+'''
+
 ### Reference: ###
     [1] Christophe Van Gysel, Maarten de Rijke, and Evangelos Kanoulas. 2016. Learning latent vector spaces for product search. In Proceedings of CIKM '16.
     [2] Qingyao Ai, Yongfeng Zhang, Keping Bi, Xu Chen, W. Bruce Croft. 2017. Learning a Hierarchical Embedding Model for Personalized ProductSearch. In Proceedings of SIGIR ’17
