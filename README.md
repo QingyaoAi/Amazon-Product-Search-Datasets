@@ -34,17 +34,23 @@ Each dataset is split into a training set and a test set according to the follow
 
 Each directory is named after the orignal file name of the 5-core data provided by McAuley et al.[4]. The detailed format for each file in each directory is as follows: 
 ```
-    1. query_text.txt.gz:
+    1. query_text.txt.gz: # All queries used in training and testing.
     	Each line represent one query string.
-    2. test.qrels.gz:
+	2. train.qrels.gz: # The relevance judgements of the training data.
     	<reviewerID>_<query_line_number> 0 <asin> <relevance_label>
     	<reviewerID>: the user id in the original 5-core data.
     	<query_line_number>: the line number (start from 0) of the query in query_text.txt.gz.
     	<asin>: the product id in the original 5-core data.
     	<relevance_label>: a binary label denoting whether the user has purchased the item after searching the query (1 for purchased and 0 for not).
-    3. train_review_id.txt.gz:
+    3. train_review_id.txt.gz: # the line id of the corresponding in the original 5-core Amazon review data
     	line_<review_line_number>
     	<review_line_number>: the line number (start from 0) of the review data in the original 5-core data.
+    4. test.qrels.gz: # The relevance judgements of the test data
+    	<reviewerID>_<query_line_number> 0 <asin> <relevance_label>
+    	<reviewerID>: the user id in the original 5-core data.
+    	<query_line_number>: the line number (start from 0) of the query in query_text.txt.gz.
+    	<asin>: the product id in the original 5-core data.
+    	<relevance_label>: a binary label denoting whether the user has purchased the item after searching the query (1 for purchased and 0 for not).
 ```
 
 ### Reference: ###
