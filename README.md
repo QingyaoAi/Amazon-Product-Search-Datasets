@@ -16,6 +16,7 @@ Also, because this benchmark is built with the 5-core data of Amazon review data
 
 ### Query Extraction ###
 
+
 The search queries for each item were extracted following the paradigm used by Gysel et al.[1]:
 *	Category information for each item were extracted from the metadata of products, and the terms from a single hierarchy of categories were concatenated to form a topic string.
 *	Stopwords and duplicate words are removed from the topic string.
